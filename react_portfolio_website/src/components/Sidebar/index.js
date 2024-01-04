@@ -1,17 +1,17 @@
 import { Link, NavLink } from 'react-router-dom'
 // When customizing the portfolio page - change VideoColorSpace, logo images etc
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
+import LogoS from '../../assets/images/logo-s4.png'
+import LogoSubtitle from '../../assets/images/logo_sub4.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faUpwork } from '@fortawesome/free-brands-svg-icons'
 import './index.scss';
-
+// ff5757
 const Sidebar = () => (
     <div className='nav-bar'>
         <Link className='logo' to='/'>
             <img src={LogoS} alt='logo' />
-            <img className='sub-logo' src={LogoSubtitle} alt='slobodan' />
+            <img className='sub-logo' src={LogoSubtitle} alt='diegogarcia' />
         </Link>
         <nav>
             <NavLink exact='true' activeclassname='active' to='/'>
