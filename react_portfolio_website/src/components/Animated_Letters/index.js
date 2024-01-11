@@ -1,6 +1,6 @@
 import './index.scss';
 
-const Animated_Letters = ({
+const AnimatedLetters = ({
     letterClass, strArray, index
 }) => {
     return(
@@ -16,4 +16,4 @@ const Animated_Letters = ({
     )
 };
 
-export default Animated_Letters
+export default AnimatedLetters

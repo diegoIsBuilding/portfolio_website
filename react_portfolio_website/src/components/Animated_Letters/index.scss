@@ -1,0 +1,45 @@
+@use 'sass:math';
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+
+  .text-animate {
+    display: inline-block;
+    opacity: 0;
+    animation: slideInLeft 1s forwards;
+    min-width: 10px;
+}
+
+.text-animate-hover {
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+
+    &:hover {
+        animation: pulse 1s infinite alternate;
+        color: #ff5757;
+    }
+}
+
+@for $i from 1 through 39 {
+    .text-animate._#{$i} {
+        animation-delay: #{math.div($i, 10)}s;
+    }
+}
